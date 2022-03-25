@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  subscription: 121f5942-6ba8-4448-925b-4a0c89f9b79b
+  subscription: 
   resourceGroup: dev-rg-storage
   storageAccount: strgac12
   container: tfstateprod
