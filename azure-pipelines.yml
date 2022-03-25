@@ -1,0 +1,25 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  
+  resourceGroup: dev-rg-storage
+  storageAccount: strgac12
+  container: tfstateprod
+  tfstateFile: terraform.tfstate
+  anyTfChanges: false
+
+steps:
+
+- task: TerraformInstaller@0
+  displayName: install Terraform v1.1.7
+  inputs:
+    terraformVersion: 'v1.1.7'
