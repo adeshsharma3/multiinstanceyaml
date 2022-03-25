@@ -23,3 +23,4 @@ steps:
   displayName: install Terraform v1.1.7
   inputs:
     terraformVersion: 'v1.1.7'
+    
